@@ -15,10 +15,52 @@ a {
   box-sizing: border-box;
 }
 
+.navigation {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 10px;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.content {
+  margin-left: 230px;
+  padding: 10px 10px;
+}
+
+.sidenav {
+  padding: 10px 30px;
+  background-color: #1C2538;
+  border-radius: 10px;
+}
+
+.sidenav .link {
+  font-weight: 500;
+  color: #94a3b8;
+  padding: 5px;
+}
+
+.active {
+  color: white
+}
+
+.sidenav .link:hover {
+  color: white;
+}
+
+.title-page {
+  font-size: 30px;
+  border-bottom: solid white;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+
   body {
     color: white;
     background: black;
